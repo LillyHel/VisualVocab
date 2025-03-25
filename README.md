@@ -1,43 +1,43 @@
-# visualvocab
+# VisualVocab
 
-## Projektbeschreibung
-Dieses Projekt ist eine interaktive Webanwendung, die Nutzer:innen ermöglicht, ihre Fremdsprachenkenntnisse auf spielerische Weise zu verbessern. Die Anwendung zeigt einen 3D-Raum, in dem Nutzer:innen aufgefordert werden, bestimmte Gegenstände auszuwählen. Das Ziel ist, das richtige Objekt im Raum zu finden und anzuklicken. Die richtige Auswahl färbt das Objekt grün, während eine falsche Auswahl rot markiert wird.
+## Project Description  
+This project is an interactive web application that allows users to improve their foreign language skills in a playful way. The application displays a 3D room where users are prompted to select specific objects. The goal is to find and click the correct object in the room. The correct selection colors the object green, while an incorrect selection highlights it in red.
 
-## Voraussetzungen
+## Requirements  
 
-Um das Projekt lokal zu starten, benötigst du Folgendes:
+To run the project locally, you will need the following:
 
-1. **Node.js und npm**: Stelle sicher, dass Node.js und npm installiert sind, um die Projektabhängigkeiten zu verwalten und zu installieren.  
-   - [Node.js herunterladen](https://nodejs.org/)
+1. **Node.js and npm**: Ensure that Node.js and npm are installed to manage and install the project dependencies.  
+   - [Download Node.js](https://nodejs.org/)
 
-2. **Visual Studio Code** oder ein anderer Code-Editor deiner Wahl.  
-   - [Visual Studio Code herunterladen](https://code.visualstudio.com/)
+2. **Visual Studio Code** or any other code editor of your choice.  
+   - [Download Visual Studio Code](https://code.visualstudio.com/)
 
-3. **Projekt-Abhängigkeiten**: Die notwendigen Pakete und Bibliotheken, wie z. B. `three.js`, die du über npm installierst (siehe Installationsanweisungen unten).
-- Abhängigkeiten:
+3. **Project Dependencies**: The necessary packages and libraries, such as `three.js`, which you can install via npm (see the installation instructions below).
+- Dependencies:
 ```bash
    npm install three 
    npm install vite
+
 ```
 
 ## Projekt-Setup
 
-1. **Repository klonen**:
-   Klone das Repository in dein lokales Verzeichnis.
+1. **Clone the repository**:
+   Clone the repository into your local directory.
    ```bash
    git clone https://github.com/joelderG/visualvocab.git
    cd improve-your-vocabulary-3d
    ```
 
-2. **Starten**:
-- Start
+2. **Start**:
+- Build
    ```bash
    npm run build
    ```
-- Entwicklung:
+- Development:
    ```bash
    npm run dev
    ```
 
-Derzeit läuft die Anwendung nur unter Anwendung von npm run dev.
-   
+Currently, the application only runs using npm run dev.   

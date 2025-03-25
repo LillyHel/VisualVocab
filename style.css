@@ -1,0 +1,378 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  color: #fff ;
+  background-color: #233D4D;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+
+}
+
+h1 {
+  font-family: "Outfit", bold;
+  font-size: 170px;
+  line-height: 0%;
+}
+
+h2 {
+  font-family: "Outfit";
+  font-size: 28px;
+
+}
+
+h3 {
+  font-family: "Outfit";
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 20px;
+}
+
+h4 {
+  font-family: "Outfit";
+  font-size: 24px;
+  margin: 10px;
+}
+
+button {
+  font-family: "Outfit";
+  font-size: 28px;
+  width: 300px;
+  height: 70px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin: 10px;
+  border-radius: 5px;
+  border-style: none;
+  background-color: #A1C181;
+  cursor: pointer;
+}
+
+i {
+  font-style: normal;
+  font-family: "Font Awesome 6 Free";
+} 
+.selected {
+  background-color: #619B8A;
+}
+
+#header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#header-title {
+display: inline-flex;
+width: fit-content;
+height: fit-content;
+}
+
+#nextBtn {
+background-color: #FE7F2D;
+position: fixed;
+bottom: 20px;
+left: 50%;
+transform: translateX(-50%);
+}
+
+#skip-btn {
+  width: fit-content;
+  height: 100%;
+  background-color: #FE7F2D;
+  margin: 0px;
+  position: relative;
+}
+
+#skip-btn #skip-tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+
+  /* Tooltip relativ zum Button platzieren */
+  position: absolute;
+  z-index: 1;
+  top: 110%; /* Unterhalb des Buttons */
+  left: 50%;
+  transform: translateX(-50%);
+  
+  /* Fade-In Effekt */
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+/* Tooltip-Pfeil */
+#skip-btn #skip-tooltiptext::after {
+  content: "";
+  position: absolute;
+  bottom: 100%; /* Über dem Tooltip (zeigt nach oben) */
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent #555 transparent;
+}
+
+/* Tooltip anzeigen bei Hover */
+#skip-btn:hover #skip-tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+#hint-btn {
+  width: fit-content;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px;
+  margin: 0px;
+  background-color: #FCCA46;
+  position: relative; /* Wichtig, damit der Tooltip relativ zum Button positioniert wird */
+}
+
+#hint-btn #hint-tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+
+  /* Tooltip relativ zum Button platzieren */
+  position: absolute;
+  z-index: 1;
+  top: 110%; /* Unterhalb des Buttons */
+  left: 50%;
+  transform: translateX(-50%);
+  
+  /* Fade-In Effekt */
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+/* Tooltip-Pfeil */
+#hint-btn #hint-tooltiptext::after {
+  content: "";
+  position: absolute;
+  bottom: 100%; /* Über dem Tooltip (zeigt nach oben) */
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent #555 transparent;
+}
+
+/* Tooltip anzeigen bei Hover */
+#hint-btn:hover #hint-tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+#language-selection {
+  padding-top: 60px;
+  justify-items: center; 
+}
+
+.selection-container {
+  justify-items: center; 
+}
+
+/* Der gameScreen nimmt den gesamten Bildschirm ein */
+#gameScreen {
+  width: 100%;
+  height: 100vh; /* Vollbildhöhe */
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -2; /* Unter anderen Elementen */
+}
+
+/* gameCanvas passt sich innerhalb von gameScreen an */
+#gameCanvas {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/* Der prompt-container wird über gameScreen angezeigt */
+#prompt-container {
+  display: flex;
+  position: absolute; /* Positioniert den Container über dem gameScreen */
+  width: calc(100% - 40px);
+  height: 80px;
+  top: 5%; 
+  margin: 20px;
+  gap: 15px;
+  z-index: 10; /* Über anderen Elementen */
+  box-sizing: border-box;
+  justify-content: flex-end;
+  color: #000;
+  text-align: center;
+}
+
+#prompt-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white; /* Hintergrundfarbe */
+  border-radius: 5px; /* Abgerundete Ecken */
+  width: 100%;
+}
+
+#prompts {
+  font-family: "Outfit";
+  font-weight: 600;
+  font-size: 40px;
+}
+
+#stats-container {
+  display: flex;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  gap: 15px;
+}
+
+/* Score count */
+.stats-display {
+  font-family: "Outfit";
+  display: flex;
+  width: fit-content;
+  padding-left: 15px; 
+  padding-right: 15px; 
+  background-color: white;
+  border-radius: 5px;
+  color: #000;
+  font-size: 24px;
+  align-items: center;
+}
+
+#wrong-count {
+color:#FE7F2D;
+gap: 10px;
+}
+
+#right-count {
+color: #A1C181;
+gap: 10px;
+
+}
+
+select, #newWord {
+  appearance: none;
+  background-color: #f8f9fa;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 10px 15px;
+  font-size: 16px;
+  color: #333;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  outline: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+select:hover, #newWord:hover {
+  background-color: #e9ecef;
+  border-color: #ced4da;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+select:focus, #newWord:focus {
+  border-color: #4a90e2;
+  box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.2);
+}
+
+#language-select-container {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 2;
+}
+
+#newWord {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 2;
+}
+
+#loadingScreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(245, 242, 236, 0.9);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.loader {
+  width: 200px;
+  height: 4px;
+  background-color: #bcba84;
+  border-radius: 2px;
+  overflow: hidden;
+  position: relative;
+}
+
+.loader-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0%;
+  background-color: #DF8314;
+  transition: width 0.3s ease-in-out;
+}
+
+.loader-text {
+  font-family: "Outfit";
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+#endScreen {
+  z-index: 20;
+}
+
+#newGame {
+  background-color: #FE7F2D;
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+} 
+
+#final-score-container {
+  display: inline-flex;
+  width: fit-content;
+  height: fit-content;
+  gap: 30px;
+}
+
+#final-score {
+  color: #FE7F2D;
+}

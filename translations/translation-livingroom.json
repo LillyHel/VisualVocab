@@ -1,0 +1,166 @@
+{
+    "en": {
+      "wall": "wall",
+      "tv": "TV",
+      "sofa": "sofa",
+      "chair": "chair",
+      "bookshelf": "bookshelf",
+      "book": "book",
+      "picture": "picture",
+      "table": "table",
+      "plant": "plant",
+      "wallshelf": "wall shelf",
+      "carpet": "carpet",
+      "succulent": "succulent plant",
+      "cupboard": "cupboard",
+      "newspaper": "newspaper",
+      "mug": "mug"
+    },
+    "de": {
+      "wall": "Wand",
+      "tv": "Fernseher",
+      "sofa": "Sofa",
+      "chair": "Sessel",
+      "bookshelf": "Bücherregal",
+      "book": "Buch",
+      "picture": "Bild",
+      "table": "Tisch",
+      "plant": "Pflanze",
+      "wallshelf": "Wandregal",
+      "carpet": "Teppich",
+      "succulent": "Sukkulente",
+      "cupboard": "Schrank",
+      "newspaper": "Zeitung",
+      "mug": "Tasse"
+    },
+    "fr": {
+      "wall": "Mur",
+      "tv": "Télévision",
+      "sofa": "Canapé",
+      "chair": "Chaise",
+      "bookshelf": "Bibliothèque",
+      "book": "Livre",
+      "picture": "Tableau",
+      "table": "Table",
+      "plant": "Plante",
+      "wallshelf": "Étagère murale",
+      "carpet": "Tapis",
+      "succulent": "Plante succulente",
+      "cupboard": "Armoire",
+      "newspaper": "Journal",
+      "mug": "Tasse"
+    },
+    "mappings": {
+      "wall": [
+        "Wall",
+        "Wall_tile"
+      ],
+      "tv": [
+        "TV",
+        "TV_1",
+        "TV_2"
+      ],
+      "sofa": [
+        "Sofa",
+        "Sofa_1",
+        "Sofa_2",
+        "Sofa_3"
+      ],
+      "chair": [
+        "Chair",
+        "Chair_1",
+        "Chair_2",
+        "Chair_3"
+      ],
+      "bookshelf": [
+        "Bookshelf"
+      ],
+      "book": [
+        "Book_stack",
+        "Book_stack_1",
+        "Book_stack_2",
+        "Book_stack_3",
+        "Book",
+        "Book_1",
+        "Book_2",
+        "Book_3",
+        "Book_4",
+        "Book001",
+        "Book001_1",
+        "Book001_2",
+        "Book001_3",
+        "Book001_4",
+        "Book001_5",
+        "Book002",
+        "Book002_1",
+        "Book002_2",
+        "Book002_3",
+        "Book002_4"
+      ],
+      "picture": [
+        "Picture_2",
+        "Picture_2_1",
+        "Picture_2_2",
+        "Picture_2_3",
+        "Picture_1",
+        "Picture_1_1",
+        "Picture_1_2",
+        "Picture_1_3"
+      ],
+      "table": [
+        "Table"
+      ],
+      "plant": [
+        "Plant",
+        "Plant_1",
+        "Plant_2",
+        "Plant_3",
+        "Plant_4"
+      ],
+      "wallshelf": [
+        "Wallshelf"
+      ],
+      "carpet": [
+        "Carpet"
+      ],
+      "succulent": [
+        "Succulent",
+        "Succulent_1",
+        "Succulent_2",
+        "Succulent001",
+        "Succulent001_1",
+        "Succulent001_2"
+      ],
+      "cupboard": [
+        "Cupboard",
+        "Cupboard_1",
+        "Cupboard_2",
+        "Cupboard_3",
+        "Cupboard001",
+        "Cupboard001_1",
+        "Cupboard001_2",
+        "Cupboard002",
+        "Cupboard002_1",
+        "Cupboard002_2",
+        "Cupboard003",
+        "Cupboard003_1",
+        "Cupboard003_2",
+        "Cupboard004",
+        "Cupboard004_1",
+        "Cupboard004_2"
+      ],
+      "newspaper": [
+        "Newspaper",
+        "Newspaper_1",
+        "Newspaper_2"
+      ],
+      "mug": [
+        "Mug",
+        "Mug_1",
+        "Mug_2",
+        "Mug001",
+        "Mug001_1",
+        "Mug001_2"
+      ]
+    }
+  }

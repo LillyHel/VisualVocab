@@ -1,0 +1,34 @@
+{
+    "en": {
+      "cube": "cube",
+      "sphere": "sphere",
+      "cone": "cone",
+      "cylinder": "cylinder"
+    },
+    "de": {
+      "cube": "Würfel",
+      "sphere": "Kugel",
+      "cone": "Kegel",
+      "cylinder": "Zylinder"
+    },
+    "fr": {
+      "cube": "cube",
+      "sphere": "Balle",
+      "cone": "cône",
+      "cylinder": "cylindre"
+    },
+    "mappings": {
+      "cube": [
+        "Cube"
+      ],
+      "sphere": [
+        "Sphere"
+      ],
+      "cone": [
+        "Cone"
+      ],
+      "cylinder": [
+        "Cylinder"
+      ]
+    }
+  }
